@@ -15,8 +15,11 @@ const Checkbox = ({items,setItems}) => {
         {items.map((item)=>{
             return(
                 <main className='mt-2 d-flex align-items-center' key={item.id}>
+                <div>
                 <FaCheck 
-                onClick={()=>{handleCheck(item.id)}}></FaCheck>
+                onClick={()=>{handleCheck(item.id)}}>
+                </FaCheck>
+                </div>
                 <input 
                 className='custom-checkbox'
                 type="checkbox" 

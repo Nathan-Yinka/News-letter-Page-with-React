@@ -21,10 +21,10 @@ const Email = ({mail,setMail,err,setError,err2,setError2,items}) => {
     }
     
   return (
-    <form>
+    <form className='mt-5 mb-3 mt-md-4 mb-md-0'>
       {(mail && mail.includes("@") && mail.includes(".com"))?
       <>
-      <label className='font-weight-bold mt-4'>Email address</label>
+      <label className='font-weight-bold  mt-1'>Email address</label>
         <br/>
         <input 
         autoFocus

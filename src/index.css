@@ -7,22 +7,13 @@
 --white: hsl(0, 0%, 100%);
 }
 
-/* @font-face {
-  font-family: Roboto;
-  src: url(./assets/fonts/Roboto-Bold.ttf);
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(./assets/fonts/Roboto-Regular.ttf);
-} */
 body {
   margin: 0;
     font-family: 'Roboto';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1rem;
+  /* max-width: 1440px; */
 }
 
 *{
@@ -41,26 +32,18 @@ body {
 
 .news-body{
   background-color: var(--white);
-  width: 60%;
-  /* height: 80vh; */
   border-radius: 20px;
   display: flex;
-  /* align-items: center; */
   justify-content: space-between;
   padding: 1% 1% 1% 4%;
 }
 
 .news-inner:nth-child(1){
-  /* height: 100%; */
   width: 50%;
-  /* align-self: center; */
-  /* background-color: aqua; */
 }
 .news-inner:nth-child(2){
-  /* height: 100%; */
   width: 45%;
 }
-
 
 .news-body h1{
   color: var(--dark-slate-grey);
@@ -77,7 +60,6 @@ body {
 .news-body p{
   color: var(--dark-slate-grey);
   font-family: Roboto;
-  /* display: none; */
 }
 
 .img-fluid{
@@ -124,6 +106,7 @@ form label,.submit-body label{
   font-weight: 700;
   cursor: pointer;
   font-size: small;
+  transition: all 1s;
 }
 
 .label-error{
@@ -175,12 +158,83 @@ input[type="Email"]::placeholder{
 
 .submit-body{
   width: 30%;
-  /* height: 40vh; */
   background-color: var(--white);
   border-radius: 20px;
   padding: 3%;
 }
 
-.btn-hide{
-  /* position: absolute; */
+
+/* -----------------------Media Quries------- */
+@media(max-width: 768px){
+  .news-body{
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  #root{
+    display: block;
+    background-color: var(--white);
+  }
+
+  .news-inner:nth-child(1){
+    width: 100%;
+    padding: 0 4%;
+  }
+  .news-inner:nth-child(2){
+    width: 100%;
+  }
+
+  .news-body h1{
+    font-size: 3rem;
+  }
+
+  .submit-body{
+    width: 100%;
+    background-color: var(--white);
+    padding: 5%;
+    padding-top: 35%;
+  }
+
+  .email-submit{
+    position: fixed;
+    bottom: 5%;
+    width: 90%;
+  }
+
+  .submit-body h1{
+    font-size: 3rem;
+    padding-top: 15%;
+  }
+}
+
+@media(max-width: 375px){
+  .news-inner:nth-child(1){
+    width: 100%;
+    padding: 0 2%;
+  }
+  .news-body h1{
+    font-size: 2.7rem;
+  }
+
+  .submit-body h1{
+    font-size: 2.7rem;
+  }
+}
+
+@media(max-width: 360px){
+  label,p{
+    font-size: 80%;
+  }
+
+  .news-body h1{
+    font-size: 2.5rem;
+  }
+
+  .submit-body h1{
+    font-size: 2.5rem;
+  }
+
+  .submit-body{
+    padding-top: 33%;
+  }
 }
