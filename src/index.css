@@ -196,11 +196,11 @@ input[type="Email"]::placeholder{
     padding-top: 35%;
   }
 
-  .email-submit{
+  /* .email-submit{ */
     /* position: fixed;
     bottom: 5%;
     width: 90%; */
-  }
+  /* } */
 
   .submit-body h1{
     font-size: 3rem;

@@ -4,7 +4,7 @@ const Checkbox = ({items,setItems}) => {
     const handleCheck = (id)=>{
         const updatedItem =items.map((item)=>{
             if(item.id === id){
-                item.checked =!item.checked
+                // item.checked =!item.checked
             }
             return item
         })

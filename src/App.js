@@ -7,17 +7,17 @@ function App() {
     {
         id: 1,
         text: 'Product discovery and building what matters',
-        checked : false
+        checked : true
     },
     {
         id: 2,
         text: 'Measuring to ensure updates are a success',
-        checked : false
+        checked : true
     },
     {
         id: 3,
         text: 'And much more!',
-        checked : false
+        checked : true
     }
 ]);
     const [mail, setMail] = useState('')
