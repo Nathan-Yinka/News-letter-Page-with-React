@@ -8,7 +8,7 @@ const Checkbox = ({items}) => {
                 <main className='mt-2 d-flex align-items-center' key={item.id}>
                 <img src={checkImg} alt='checking img d-block'></img>
                 <label 
-                className='ms-3'>
+                className='ms-1 ms-md-3'>
                     {item.text}
                 </label>
                 <br/>
