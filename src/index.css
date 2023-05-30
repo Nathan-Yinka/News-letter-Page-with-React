@@ -73,14 +73,14 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  width: 20px;
+  /* width: 20px;
   height: 20px;
   border: 1px solid;
   border-radius: 100%;
   outline: none;
   cursor: pointer;
   position: relative;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
 .custom-checkbox:checked{
@@ -211,7 +211,7 @@ input[type="Email"]::placeholder{
 @media(max-width: 375px){
   .news-inner:nth-child(1){
     width: 100%;
-    padding: 0 2%;
+    padding: 0 5%;
   }
   .news-body h1{
     font-size: 2.7rem;
@@ -223,9 +223,9 @@ input[type="Email"]::placeholder{
 }
 
 @media(max-width: 360px){
-  label,p{
+  /* label,p{
     font-size: 80%;
-  }
+  } */
 
   .news-body h1{
     font-size: 2.5rem;

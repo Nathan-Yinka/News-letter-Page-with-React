@@ -1,5 +1,6 @@
 import React from 'react'
 import {FaCheck} from "react-icons/fa"
+import checkImg from "../assets/images/icon-list.svg"
 const Checkbox = ({items,setItems}) => {
     const handleCheck = (id)=>{
         const updatedItem =items.map((item)=>{
@@ -15,11 +16,12 @@ const Checkbox = ({items,setItems}) => {
         {items.map((item)=>{
             return(
                 <main className='mt-2 d-flex align-items-center' key={item.id}>
-                <div>
+                {/* <div>
                 <FaCheck 
                 onClick={()=>{handleCheck(item.id)}}>
                 </FaCheck>
-                </div>
+                </div> */}
+                <img src={checkImg}></img>
                 <input 
                 className='custom-checkbox'
                 type="checkbox" 
