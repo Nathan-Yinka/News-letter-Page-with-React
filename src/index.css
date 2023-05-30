@@ -69,26 +69,10 @@ body {
   display: block;
 }
 
-.custom-checkbox {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  display: hidden;
-  /* width: 20px;
-  height: 20px;
-  border: 1px solid;
-  border-radius: 100%;
-  outline: none;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden; */
-}
-
-
 main{
   position: relative;
 }
-main svg{
+/* main svg{
     width: 10px;
     height: 15px;
     font-size: 1rem;
@@ -99,7 +83,7 @@ main svg{
     left: 5px;
     z-index: 1;
   color: var(--white);
-}
+} */
 
 form label,.submit-body label{
   font-weight: 700;
