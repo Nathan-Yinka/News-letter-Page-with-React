@@ -73,6 +73,7 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
+  display: hidden;
   /* width: 20px;
   height: 20px;
   border: 1px solid;
