@@ -28,6 +28,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  /* overflow: auto; */
 }
 
 .news-body{
@@ -196,9 +197,9 @@ input[type="Email"]::placeholder{
   }
 
   .email-submit{
-    position: fixed;
+    /* position: fixed;
     bottom: 5%;
-    width: 90%;
+    width: 90%; */
   }
 
   .submit-body h1{
