@@ -84,9 +84,6 @@ body {
   overflow: hidden; */
 }
 
-.custom-checkbox:checked{
-  background-color: var(--tomato);
-}
 
 main{
   position: relative;
