@@ -14,7 +14,6 @@ const Home = ({mail,setMail,err,setError,err2,setError2,items,setItems}) => {
         <Text text="Join 60,000+ product managers receiving monthly updates on:"/>
         <Checkbox 
         items={items}
-        setItems={setItems}
         />
         <Email
         mail = {mail}
